@@ -163,16 +163,18 @@ main section div a {
 /*!------SOLUCIONES------*/
 main section div h2 {
     font-size: 51px;
+    margin: 0;
 }
 
 .flex-container-h2-p p {
     font-size: 16;
     padding-top: 25px;
+    margin: 0;
 }
 
 .flex-container-h2-p {
     text-align: center;
-    padding: 80px 150px;
+    padding: 40px 150px 30px 150px;
 }
 
 .flex-container-tarjetas {
@@ -520,7 +522,7 @@ footer p {
 /*!------FINANCIAMIENTO------*/
 
 .financiamiento {
-    padding: 0px 10px 80px 10px;
+    padding: 0px 10px 40px 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -611,7 +613,7 @@ footer p {
 /*!------INVERSIONES------*/
 
 .inversiones {
-    padding: 50px 10px 50px 10px;
+    padding: 0 10px 50px 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -651,7 +653,7 @@ p.contacto {
 }
 
 .formulariocontacto {
-    padding-bottom: 15px;
+    padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -719,7 +721,7 @@ p.contacto {
     text-decoration: none;
     border: none;
     background: #02E0B8;
-    color: white;
+    color: #07071c;
     transition: 0.3s;
     margin-top: 15px;
     border-radius: 30px;
@@ -762,7 +764,7 @@ p.contacto {
 
     .flex-container-h2-p {
         text-align: center;
-        padding: 60px 100px;
+        padding: 30px 100px;
     }
 
     /*!-----PRECONTACTO------*/
@@ -895,7 +897,7 @@ p.contacto {
 
     .flex-container-h2-p {
         text-align: center;
-        padding: 30px 30px;
+        padding: 15px 30px;
     }
 
     .flex-container-tarjetas {
@@ -937,7 +939,7 @@ p.contacto {
     }
 
     .grid-items {
-        padding: 10px;
+        padding: 5px;
         text-align: center;
     }
 
@@ -1060,6 +1062,21 @@ p.contacto {
         font-size: 15px;
     }
 
+    .formulariocontacto form {
+        min-width: 100px;
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .formulariocontacto {
+        padding: 0 0 40px 0;
+    }
+
+    div.name,
+    div.email,
+    fieldset.msj {
+        padding: 5px;
+    }
 }
 
 
