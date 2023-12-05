@@ -764,7 +764,7 @@ p.contacto {
 
     .flex-container-h2-p {
         text-align: center;
-        padding: 80px 100px;
+        padding: 80px 100px 40px 100px;
     }
 
     /*!-----PRECONTACTO------*/
@@ -904,7 +904,7 @@ footer {
 
     .flex-container-h2-p {
         text-align: center;
-        padding: 15px 15px;
+        padding: 5px;
     }
 
     .flex-container-tarjetas {
