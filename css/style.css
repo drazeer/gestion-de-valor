@@ -770,8 +770,9 @@ p.contacto {
 
     .flex-container-h2-p {
         text-align: center;
-        padding: 80px 100px 40px 100px;
+        padding: 30px 100px 30px 100px;
     }
+    
 
     /*!-----PRECONTACTO------*/
     .preguntas {
