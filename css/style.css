@@ -172,10 +172,16 @@ main section div h2 {
     margin: 0;
 }
 
-.flex-container-h2-p {
+div.soluciones {
     text-align: center;
     padding: 80px 150px 30px 150px;
 }
+
+.flex-container-h2-p {
+    text-align: center;
+    padding: 15px 150px 30px 150px;
+}
+
 
 .flex-container-tarjetas {
     display: flex;
@@ -892,9 +898,9 @@ footer {
 
 
     /*!-----SOLUCIONES------*/
-    main section div h2 {
-        font-size: 29px;
-        margin: 60px 0 0 0;
+    div.soluciones h2 {
+        font-size: 26px;
+        margin: 70px 0 0 0;
     }
 
     .flex-container-h2-p p {
@@ -907,9 +913,15 @@ footer {
         padding: 5px;
     }
 
+    div.soluciones {
+        text-align: center;
+        padding: 30px 10px 15px 10px;
+    }
+
     .flex-container-tarjetas {
         padding-bottom: 30px;
     }
+
 
     /*!-----PRECONTACTO------*/
     .precontacto {
