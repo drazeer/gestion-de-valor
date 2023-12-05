@@ -45,20 +45,36 @@ header div a img {
     font-size: 18px;
 }
 
+a.nav-link.active:hover {
+    color: #02E0B8;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem;
+}
+
 /*----BORDE----*/
+
 .navbar-toggler {
     color: #02E0B8;
     line-height: 1;
     font-size: 1rem;
-    background-color: 07071c;
+    background-color: #07071c;
     border: var(--bs-border-width) solid #02E0B8;
 }
 
-.navbar-toggler-icon {
+/*.navbar-toggler-icon {
     background-color: transparent;
     border-radius: 10%;
     filter: grayscale(1) invert(1);
+}*/
+
+.navbar-toggler-icon {
+    filter: invert(79%) sepia(52%) saturate(200%) hue-rotate(113deg) brightness(91%) contrast(98%);
 }
+
 
 /*!----WHATSAPP BUTTON----*/
 
