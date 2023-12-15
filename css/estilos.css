@@ -1,0 +1,44 @@
+/*!------FUENTE------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*!------RESET------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
+
+/*!------HEADER------*/
+header {
+  padding: 15px 25px;
+  position: sticky;
+  top: 0px;
+  background-color: #07071c; }
+  header .flex-container-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header .flex-container-navbar a img {
+      max-width: 189px; }
+    header .flex-container-navbar .bg-light {
+      background-color: #07071c !important; }
+      header .flex-container-navbar .bg-light .navbar-toggler {
+        color: #02E0B8;
+        line-height: 1;
+        font-size: 1rem;
+        background-color: #07071c;
+        border: var(--bs-border-width) solid #02E0B8; }
+        header .flex-container-navbar .bg-light .navbar-toggler .navbar-toggler-icon {
+          filter: invert(79%) sepia(52%) saturate(200%) hue-rotate(113deg) brightness(91%) contrast(98%); }
+      header .flex-container-navbar .bg-light div .navbar-nav .nav-link.active,
+      header .flex-container-navbar .bg-light div .navbar-nav .show > .nav-link {
+        color: white;
+        font-size: 18px; }
+  header div a i {
+    color: #25d366;
+    background: #07071c;
+    top: 54%;
+    right: 15px;
+    position: fixed;
+    border-radius: 5%; }
