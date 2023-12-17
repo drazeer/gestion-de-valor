@@ -32,6 +32,9 @@ header {
                 .navbar-nav .show>.nav-link {
                     color: white;
                     font-size: 18px;
+                    &:hover {
+                        color: #02E0B8;
+                    }
                 }
             }
         };
