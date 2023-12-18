@@ -678,6 +678,8 @@ footer p {
     max-height: 100%;
 }
 
+
+
 .tarjetas {
     margin: 10px 15px 10px 15px;
 }
@@ -685,8 +687,6 @@ footer p {
 .btn-normal {
     margin: 10px auto 0 auto;
 }
-
-
 
 .btn-normal a {
     max-width: 200px;
@@ -803,7 +803,6 @@ p.contacto {
     min-width: 95%;
 }
 
-
 .msj {
     display: flex;
     flex-wrap: wrap;
@@ -893,35 +892,6 @@ p.contacto {
         font-size: 18px;
     }
 
-    /*!-----FINANCIAMIENTO------*/
-
-    .grid-container-financiamiento {
-        grid-template-rows: repeat(4, 320px);
-        grid-template-columns: 1fr 1fr;
-        max-width: 770px;
-    }
-
-
-    .grid-items h3 {
-        font-size: 24px;
-    }
-
-    .grid-items p {
-        font-size: 15px;
-    }
-
-    .imagen-financiamiento {
-        grid-row-start: 2;
-        grid-row-end: 4;
-    }
-
-    /*!------INVERSIONES------*/
-
-    .grid-container-inversiones {
-        grid-auto-rows: 300px;
-        grid-template-columns: 1fr 1fr;
-    }
-
     /*!------ASESORAMIENTO------*/
 
     .grid-container-asesoramiento {
@@ -974,6 +944,35 @@ p.contacto {
         margin-top: -10px;
     }
 
+/*!-----FINANCIAMIENTO------*/
+
+.grid-container-financiamiento {
+    grid-template-rows: repeat(4, 320px);
+    grid-template-columns: 1fr 1fr;
+    max-width: 770px;
+}
+
+
+.grid-items h3 {
+    font-size: 24px;
+}
+
+.grid-items p {
+    font-size: 15px;
+}
+
+.imagen-financiamiento {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/*!------INVERSIONES------*/
+
+.grid-container-inversiones {
+    grid-auto-rows: 300px;
+    grid-template-columns: 1fr 1fr;
+}
+
 }
 
 
@@ -1001,12 +1000,6 @@ p.contacto {
         padding: 15px 25px;
         border-radius: 30px;
     }
-
-    /*!------FOOTER------*/
-footer {
-    padding: 10px 10px;
-}
-
 
     /*!-----SOLUCIONES------*/
     div.soluciones h2 {
@@ -1052,39 +1045,11 @@ footer {
         padding: 10px 20px;
     }
 
-    /*!-----FINANCIAMIENTO------*/
-
-    .grid-container-financiamiento {
-        grid-template-rows: repeat(8, 300px);
-        grid-template-columns: 1fr;
-        max-width: 350px;
+    /*!------FOOTER------*/
+    footer {
+        padding: 10px 10px;
     }
-
-    .grid-items h3 {
-        font-size: 22px;
-    }
-
-    .grid-items p {
-        font-size: 14px;
-    }
-
-    .grid-items {
-        padding: 5px;
-        text-align: center;
-    }
-
-    .imagen-financiamiento {
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-
-    /*!------INVERSIONES------*/
-
-    .grid-container-inversiones {
-        grid-auto-rows: 260px;
-        grid-template-columns: 1fr;
-    }
-
+    
     /*!------ASESORAMIENTO------*/
     .video-wrapper-asesoramiento video {
         transform: rotate(90deg);
@@ -1187,6 +1152,40 @@ footer {
     .grid-items-hablemos  a {
         margin-top: 0;
     }
+
+    /*!-----FINANCIAMIENTO------*/
+
+    .grid-container-financiamiento {
+        grid-template-rows: repeat(8, 300px);
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+    .grid-items h3 {
+        font-size: 22px;
+    }
+
+    .grid-items p {
+        font-size: 14px;
+    }
+
+    .grid-items {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .imagen-financiamiento {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    /*!------INVERSIONES------*/
+
+    .grid-container-inversiones {
+        grid-auto-rows: 260px;
+        grid-template-columns: 1fr;
+    }
+
     /*!------CONTACTO------*/
     .msj {
         font-size: 15px;

@@ -1,0 +1,488 @@
+@media screen and (max-width: 1028px) {
+
+    /*!------1028px HEADER------*/
+    header {
+        .flex-container-navbar {
+            .bg-light {
+                div {
+
+                    .navbar-nav .nav-link.active,
+                    .navbar-nav .show>.nav-link {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*!------1028px HERO------*/
+    main {
+        section {
+            .video-wrapper-hero {
+                .flex-container-hero {
+                    h1 {
+                        font-size: 63px;
+                    }
+
+                    span {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*----1028px SOLUCIONES----*/
+        section {
+            div.flex-container-h2-p {
+                padding: 30px 100px 30px 100px;
+            }
+
+            div.soluciones {
+                padding-top: 25px;
+                margin: 0;
+
+                h2 {
+                    font-size: 47px;
+                }
+
+                p {
+                    font-size: 15px;
+                    padding-top: 25px;
+                }
+            }
+        }
+
+        /*----1028px PRECONTACTO----*/
+        section.precontacto {
+            .preguntas {
+                font-size: 24px;
+            }
+
+            .respuestas {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    /*----1028px ASESORAMIENTO----*/
+    main {
+        section.flex-asesoramiento {
+            div.video-wrapper-asesoramiento {
+                div.flex-container-asesoramiento-h2-p {
+                    div.grid-container-asesoramiento {
+                        gap: 5px;
+                        grid-template-rows: 180px 180px 50px;
+
+                        div.grid-items-contacto {
+                            grid-column: 1/3;
+
+                            h3 {
+                                &::first-letter {
+                                    font-size: 70px;
+                                    margin-right: 15px;
+                                    margin-top: 0;
+                                }
+                            }
+
+                            p {
+                                inline-size: 320px;
+                            }
+
+                        }
+
+                        div.grid-items-analisis {
+                            grid-column: 1/4;
+                            padding-left: 100px;
+
+                            h3 {
+
+                                &::first-letter {
+                                    font-size: 70px;
+                                    margin-left: 15px;
+                                    margin-top: 0;
+                                }
+                            }
+                            p {
+                                inline-size: 320px;
+                            }
+                        }
+
+                        div.grid-items-ejecucion {
+                            grid-column: 4/7;
+                            grid-row: 1/2;
+                            text-align: left;
+
+                            h3 {
+
+                                &::first-letter {
+                                    font-size: 70px;
+                                    margin-right: 15px;
+                                    margin-top: 0;
+                                }
+
+                                p {
+                                    inline-size: 320px;
+                                }
+                            }
+                        }
+
+                        div.grid-items-resultados {
+                            grid-column: 4/7;
+                            padding-left: 100px;
+
+                            h3 {
+                                &::first-letter {
+                                    font-size: 70px;
+                                    margin-left: 15px;
+                                    margin-top: -10px;
+                                }
+                            }
+                            p {
+                                inline-size: 320px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*----1028px FINANCIAMIENTO----*/
+    main {
+        section.financiamiento {
+            div.grid-container-financiamiento {
+                grid-template-rows: repeat(4, 320px);
+                grid-template-columns: 1fr 1fr;
+                max-width: 770px;
+
+                div.imagen-financiamiento {
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                }
+
+                div.grid-items {
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    /*----1028px INVERSIONES----*/
+    main {
+        section.inversiones {
+            div.grid-container-inversiones {
+                grid-auto-rows: 300px;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 766px) {
+
+    /*!------766px HEADER------*/
+    header {
+        .flex-container-navbar {
+            .bg-light {
+                div {
+
+                    .navbar-nav .nav-link.active,
+                    .navbar-nav .show>.nav-link {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*!------766ox HERO------*/
+    main {
+        section {
+            .video-wrapper-hero {
+                .flex-container-hero {
+                    h1 {
+                        font-size: 35px;
+                    }
+
+                    span {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    a.btn-soluciones {
+                        font-size: 17px;
+                        margin-top: 60px;
+                        padding: 15px 25px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+
+        /*----766px SOLUCIONES----*/
+        section {
+            div.flex-container-h2-p {
+                text-align: center;
+                padding: 5px;
+            }
+
+            div.soluciones {
+                text-align: center;
+                padding: 30px 10px 15px 10px;
+
+                h2 {
+                    font-size: 26px;
+                    margin: 70px 0 0 0;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding-top: 15px;
+                }
+            }
+
+            div.flex-container-tarjetas {
+                padding-bottom: 30px;
+            }
+        }
+
+        /*----766px PRECONTACTO----*/
+        section.precontacto {
+            flex-direction: column;
+
+            .preguntas {
+                font-size: 20px;
+            }
+
+            .respuestas {
+                p {
+                    font-size: 16px;
+                }
+
+                a.btn-respuestas {
+                    font-size: 18px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+
+    /*!------766px FOOTER------*/
+    body {
+        footer {
+            padding: 10px 10px;
+        }
+    }
+
+    /*----766px ASESORAMIENTO----*/
+    main {
+        section.flex-asesoramiento {
+            div.video-wrapper-asesoramiento {
+                border: 1px solid #000;
+                height: 100%;
+
+                video {
+                    transform: rotate(90deg);
+                    object-fit: none;
+                    left: -50%;
+                    width: 200%;
+                }
+
+                div.flex-container-asesoramiento-h2-p {
+                    padding: 25px;
+
+                    div {
+                        h2 {
+                            font-size: 35px;
+                            padding: 30px;
+                            text-shadow: black 1px 1px 2px;
+                        }
+                    }
+
+                    div.grid-container-asesoramiento {
+                        display: grid;
+                        padding: 5px 0 0 0;
+                        gap: 5px;
+                        grid-template-rows: 120px 120px 120px 120px 50px;
+                        grid-template-columns: 1fr;
+
+                        div.grid-items-contacto {
+                            grid-row: 1/2;
+                            grid-column: 1/2;
+
+                            h3 {
+                                font-size: 22px;
+
+                                &::first-letter {
+                                    font-size: 60px;
+                                    margin-right: 15px;
+                                    margin-top: 10px;
+                                    padding: 0 0 0 50px;
+                                }
+                            }
+
+                            p {
+                                font-size: 15px;
+                                inline-size: 320px;
+                            }
+
+                        }
+
+                        div.grid-items-analisis {
+                            grid-row: 2/3;
+                            grid-column: 1/2;
+                            padding-right: 20px;
+
+                            h3 {
+                                font-size: 22px;
+
+                                &::first-letter {
+                                    font-size: 60px;
+                                    margin-left: 15px;
+                                    margin-top: 10px;
+                                    padding: 0 50px 0 0px;
+                                }
+                            }
+
+                            p {
+                                font-size: 15px;
+                                inline-size: 320px;
+                            }
+                        }
+
+
+                        div.grid-items-ejecucion {
+                            grid-row: 3/4;
+                            grid-column: 1/2;
+
+                            h3 {
+                                font-size: 22px;
+
+                                &::first-letter {
+                                    font-size: 60px;
+                                    margin-right: 15px;
+                                    margin-top: 10px;
+                                    padding: 0 0 0 50px;
+                                }
+                            }
+
+                            p {
+                                font-size: 15px;
+                                inline-size: 320px;
+                            }
+                        }
+
+                        div.grid-items-resultados {
+                            grid-row: 4/5;
+                            grid-column: 1/2;
+                            padding-right: 20px;
+
+                            h3 {
+                                font-size: 22px;
+
+                                &::first-letter {
+                                    font-size: 60px;
+                                    margin-left: 15px;
+                                    margin-top: 10px;
+                                    padding: 0 50px 0 0px;
+                                }
+                            }
+
+                            p {
+                                font-size: 15px;
+                                inline-size: 320px;
+                            }
+                        }
+
+                        div.grid-items-hablemos {
+                            grid-row: 5/6;
+                            grid-column: 1/2;
+
+                            a.btn-normal {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*----766px FINANCIAMIENTO----*/
+    main {
+        section.financiamiento {
+            div.grid-container-financiamiento {
+                grid-template-rows: repeat(8, 300px);
+                grid-template-columns: 1fr;
+                max-width: 350px;
+
+                div.imagen-financiamiento {
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                }
+
+                div.grid-items {
+                    padding: 5px;
+                    text-align: center;
+
+                    h3 {
+                        font-size: 22px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    /*----766px INVERSIONES----*/
+    main {
+        section.inversiones {
+            div.grid-container-inversiones {
+                grid-auto-rows: 260px;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    /*----766px CONTACTO----*/
+    section.formulariocontacto {
+        padding: 0 0 40px 0;
+
+        form {
+            min-width: 100px;
+            max-width: 100%;
+            padding: 5px;
+
+            fieldset {
+                div.name {
+                    padding: 5px;
+                }
+
+                div.email {
+                    padding: 5px;
+                }
+
+                div.msj {
+                    font-size: 15px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
