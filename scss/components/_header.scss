@@ -3,27 +3,23 @@ header {
     padding: 15px 25px;
     position: sticky;
     top: 0px;
-    background-color: #07071c;
+    background-color: $color-principal;
     z-index: 999;
     .flex-container-navbar {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flex (flex, wrap, row, space-between, center);
         a {
             img {
                 max-width: 189px;
             }
         }
         .bg-light {
-            background-color: #07071c !important;
+            background-color: $color-principal !important;
             .navbar-toggler {
-                color: #02E0B8;
+                color: $color-secundario;
                 line-height: 1;
                 font-size: 1rem;
-                background-color: #07071c;
-                border: var(--bs-border-width) solid #02E0B8;
+                background-color: $color-principal;
+                border: var(--bs-border-width) solid $color-secundario;
                 .navbar-toggler-icon {
                     filter: invert(79%) sepia(52%) saturate(200%) hue-rotate(113deg) brightness(91%) contrast(98%);
                 }
@@ -31,10 +27,10 @@ header {
             div {
                 .navbar-nav .nav-link.active,
                 .navbar-nav .show>.nav-link {
-                    color: white;
+                    color: $color-terciario;
                     font-size: 18px;
                     &:hover {
-                        color: #02E0B8;
+                        color: $color-secundario;
                     }
                 }
             }
@@ -44,7 +40,7 @@ header {
         a {
             i {
                 color: #25d366;
-                background: #07071c;
+                background: $color-principal;
                 top: 54%;
                 right: 15px;
                 position: fixed;

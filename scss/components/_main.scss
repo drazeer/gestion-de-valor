@@ -1,7 +1,7 @@
 /*!------HEADER------*/
 main {
-    background-color: #07071c;
-    color: white;
+    background-color: $color-principal;
+    color: $color-terciario;
     /*----HERO----*/
     section {
         .video-wrapper-hero {
@@ -24,11 +24,7 @@ main {
                 min-height: 700px;
                 text-align: left;
                 padding-left: 20px;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
+                @include flex (flex, wrap, column, flex-start, flex-start);
                 h1 {
                     font-size: 67px;
                     font-weight: 600;
@@ -45,24 +41,17 @@ main {
                     }
                 }
                 .btn-soluciones {
-                    text-decoration: none;
                     font-size: 18px;
-                    color: #07071c;
-                    background-color: #02E0B8;
                     padding: 15px 25px;
-                    border: none;
                     border-radius: 50px;
-                    transition : 680ms;
-                    transform: translateY(0);
-                    display: flex;
-                    align-items: center;
+                    @extend %btn-general-format;
+                    @include flex (flex, wrap, row, space-around, center);
                     margin-top: 100px;
                     max-width: 150px;
                     text-align: center;
                         &:hover, &:focus {
-                            color: white;
+                            @extend %btn-hover-focus;
                             padding: 20px 27px;
-                            transform: translateY(-0px);
                         }
                 }
             }
@@ -85,21 +74,14 @@ main {
             }
         }
         div.flex-container-tarjetas {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
+            @include flex (flex, wrap, row, space-around, center);
             padding-bottom: 60px;
             div.tarjetas {
                 max-width: 500px;
-                border: 1px white solid;
+                border: 1px $color-terciario solid;
                 text-align: center;
-                margin: 10px 15px 10px 15px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                margin: 10px 15px;
+                @include flex (flex, wrap, column, center, center);
                 img {
                     max-width: 100%;
                 }
@@ -107,22 +89,15 @@ main {
                     height: 40px;
                     margin-top: 8px;
                     a.btn-tarjetas {
-                        text-decoration: none;
                         font-size: 14px;
-                        color: #07071c;
-                        background-color: #02E0B8;
                         padding: 8px;
-                        border: none;
                         border-radius: 25px;
-                        transition : 680ms;
-                        transform: translateY(0);
-                        display: flex;
-                        align-items: center;
+                        @extend %btn-general-format;
+                        @include flex (flex, wrap, row, space-around, center);
                         margin-top: 3px;
                         &:hover, &:focus {
-                            color: white;
+                            @extend %btn-hover-focus;
                             padding: 10px;
-                            transform: translateY(-0px);
                         }
                     }
                 }
@@ -131,13 +106,9 @@ main {
     }
     /*----PARTNERS----*/
     section.partners {
-            background-color: white;
+            background-color: $color-terciario;
             padding: 10px 5px 10px 5px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flex (flex, wrap, row, space-evenly, center);
         div {
             img {
                 max-width: 172px;
@@ -150,13 +121,9 @@ main {
     section.precontacto {
         min-height: 400px;
         text-decoration: none;
-        color: white;
+        color: $color-terciario;
         padding: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flex (flex, wrap, row, space-between, center);
         text-align: center;
         .preguntas {
             min-width: 325px;
@@ -172,11 +139,7 @@ main {
             min-width: 325px;
             margin: 10px;
             max-width: 40%;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, wrap, column, center, center);
             padding-bottom: 20px;
             text-align: center;
             p {
@@ -185,22 +148,15 @@ main {
                 margin: 0;
             }
             .btn-respuestas {
-                text-decoration: none;
                 font-size: 18px;
-                color: #07071c;
-                background-color: #02E0B8;
                 padding: 12px 25px;
-                border: none;
                 border-radius: 50px;
-                transition : 680ms;
-                transform: translateY(0);
-                display: flex;
-                align-items: center;
+                @extend %btn-general-format;
+                @include flex (flex, wrap, row, space-around, center);
                 margin-top: 100px;
                 &:hover, &:focus {
-                    color: white;
+                    @extend %btn-hover-focus;
                     padding: 15px 29px;
-                    transform: translateY(-0px);
                 }
             }
         }
@@ -215,18 +171,10 @@ main {
         background-position: center;
         background-attachment: fixed;
         text-decoration: none;
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        color: $color-terciario;
+        @include flex (flex, wrap, row, space-around, center);
         div.info-dire {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
+            @include flex (flex, wrap, row, space-around, center);
             img {
                     max-width: 250px;
                     padding: 30px;
@@ -258,11 +206,7 @@ main {
     }
     /*----ASESORAMIENTO----*/
     section.flex-asesoramiento {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, wrap, column, center, center);
         width: 100%;
         div.video-wrapper-asesoramiento {
             border: 2px solid #000;
@@ -270,9 +214,7 @@ main {
             position: relative;
             overflow: hidden;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex (flex, wrap, row, center, center);
             video {
                 object-fit: cover;
                 position: absolute;
@@ -300,12 +242,10 @@ main {
                     grid-row: 1/2;
                     text-align: left;
                     h3 {
-                        font-size: 24px;
-                        margin: 0;
-                        text-shadow: black 1px 1px 1px;
+                        @extend %h3-inversiones;
                         &::first-letter {
                             font-size: 80px;
-                            color: #02E0B8;
+                            color: $color-secundario;
                             float: left;
                             margin-right: 20px;
                             margin-top: -10px;
@@ -323,12 +263,10 @@ main {
                     grid-row: 2/3;
                     text-align: right;
                     h3 {
-                        font-size: 24px;
-                        margin: 0;
-                        text-shadow: black 1px 1px 1px;
+                        @extend %h3-inversiones;
                         &::first-letter {
                             font-size: 80px;
-                            color: #02E0B8;
+                            color: $color-secundario;
                             float: right;
                             margin-left: 20px;
                             margin-top: -10px;
@@ -340,12 +278,10 @@ main {
                     grid-row: 1/2;
                     text-align: left;
                     h3 {
-                        font-size: 24px;
-                        margin: 0;
-                        text-shadow: black 1px 1px 1px;
+                        @extend %h3-inversiones;
                         &::first-letter {
                             font-size: 80px;
-                            color: #02E0B8;
+                            color: $color-secundario;
                             float: left;
                             margin-right: 20px;
                             margin-top: -10px;
@@ -363,12 +299,10 @@ main {
                     grid-row: 2/3;
                     text-align: right;
                     h3 {
-                        font-size: 24px;
-                        margin: 0;
-                        text-shadow: black 1px 1px 1px;
+                        @extend %h3-inversiones;
                         &::first-letter {
                             font-size: 80px;
-                            color: #02E0B8;
+                            color: $color-secundario;
                             float: right;
                             margin-left: 20px;
                             margin-top: -20px;
@@ -380,19 +314,14 @@ main {
                     grid-row: 3/4;
                     a {
                         max-width: 200px;
-                        text-decoration: none;
                         font-size: 18px;
                         text-align: center;
-                        background-color: #02E0B8;
-                        color: #07071c;
-                        transition : 680ms;
                         padding: 10px 20px;
                         border-radius: 30px;
-                        transform: translateY(0);
+                        @extend %btn-general-format;
                         &:hover {
-                            color: white;
+                            @extend %btn-hover-focus;
                             padding: 11px 21px;
-                            transform: translateY(-0px);
                         }
                     }
                 }
@@ -403,10 +332,7 @@ main {
     /*----FINANCIAMIENTO----*/
     section.financiamiento {
         padding: 0px 10px 40px 10px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (flex, wrap, column, center, center);
         div.grid-container-financiamiento {
             max-width: 1375px;
             margin: 5px auto 30px auto;
@@ -417,12 +343,10 @@ main {
             gap: 10px;
             div.imagen-financiamiento {
                 grid-row: 1/4;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex (flex, wrap, row, center, center);
             }
             div.grid-items {
-                border: 1px white solid;
+                border: 1px $color-terciario solid;
                 padding: 20px;
                 text-align: center;
                 img {
@@ -445,21 +369,15 @@ main {
             margin: 10px auto 0 auto;
             a {
                 max-width: 200px;
-                text-decoration: none;
                 font-size: 18px;
                 text-align: center;
-                background-color: #02E0B8;
-                color: #07071c;
-                transition : 680ms;
                 padding: 10px 20px;
                 border-radius: 30px;
-                transform: translateY(0);
-                display: flex;
-                align-items: center; 
+                @extend %btn-general-format;
+                @include flex (flex, wrap, row, center, center); 
                 &:hover {
-                    color: white;
+                    @extend %btn-hover-focus;
                     padding: 11px 21px;
-                    transform: translateY(-0px);
                 }
             }
         }
@@ -467,10 +385,7 @@ main {
 /*----INVERSIONES----*/
     section.inversiones {
         padding: 0 10px 50px 10px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (flex, wrap, column, center, center);
         div.grid-container-inversiones{
             max-width: 1375px;
             margin: 5px auto 30px auto;
@@ -480,7 +395,7 @@ main {
             grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
             div.grid-items {
-                border: 1px white solid;
+                border: 1px $color-terciario solid;
                 padding: 20px;
                 text-align: center;
                 img {
@@ -503,21 +418,15 @@ main {
             margin: 10px auto 0 auto;
             a {
                 max-width: 200px;
-                text-decoration: none;
                 font-size: 18px;
                 text-align: center;
-                background-color: #02E0B8;
-                color: #07071c;
-                transition : 680ms;
                 padding: 10px 20px;
                 border-radius: 30px;
-                transform: translateY(0);
-                display: flex;
-                align-items: center; 
+                @extend %btn-general-format;
+                @include flex (flex, wrap, row, space-around, center);
                 &:hover {
-                    color: white;
+                    @extend %btn-hover-focus;
                     padding: 11px 21px;
-                    transform: translateY(-0px);
                 }
             }
         }
@@ -539,27 +448,16 @@ main {
     section.formulariocontacto {
         div.formulariocontacto {
             padding-bottom: 40px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, wrap, column, center, center);
             form {
                 min-width: 250px;
                 max-width: 95%;
-                border: 1px white solid;
+                border: 1px $color-terciario solid;
                 padding: 15px;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex (flex, wrap, column, center, center);
                 fieldset {
                     div.name {
-                        display: flex;
-                        flex-wrap: wrap;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: flex-start;
+                        @include flex (flex, wrap, row, center, flex-start);
                         padding: 10px;
                         input.name {
                             min-width: 95%;
@@ -568,11 +466,7 @@ main {
                 }
                 fieldset {
                     div.email {
-                        display: flex;
-                        flex-wrap: wrap;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: flex-start;
+                        @include flex (flex, wrap, column, center, flex-start);
                         padding: 10px;
                         input.email {
                             min-width: 95%;
@@ -580,39 +474,24 @@ main {
                     }
                 }
                 fieldset.msj {
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
+                    @include flex (flex, wrap, column, center, flex-start);
                     padding: 10px;
                     font-size: 16px;
                 }
                 fieldset.btn-contacto {
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex (flex, wrap, column, center, center);
                     .btn-enviar{
                         max-width: 200px;
-                        text-decoration: none;
                         font-size: 18px;
                         text-align: center;
-                        background-color: #02E0B8;
-                        color: #07071c;
-                        transition : 680ms;
                         padding: 10px 25px;
                         border-radius: 30px;
-                        border: none;
-                        transform: translateY(0);
-                        display: flex;
-                        align-items: center;
                         margin-top: 15px;
+                        @extend %btn-general-format;
+                        @include flex (flex, wrap, row, center, center);
                         &:hover {
-                            color: white;
+                            @extend %btn-hover-focus;
                             padding: 12px 28px;
-                            transform: translateY(-0px);
                         }
                     }
                 }

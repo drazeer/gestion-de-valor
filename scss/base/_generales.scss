@@ -7,3 +7,33 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+//! EXTENDS
+%btn-general-format {
+    text-decoration: none;
+    color: $color-principal;
+    background-color: $color-secundario;
+    border: none;
+    transition : 680ms;
+    transform: translateY(0);
+}
+
+%btn-hover-focus {
+    color: $color-terciario;
+    transform: translateY(-0px);
+}
+
+%h3-inversiones {
+    font-size: 24px;
+    text-shadow: black 1px 1px 1px;
+    margin: 0;
+}
+
+//! MIXINS
+@mixin flex($flex, $wrap, $direction, $justify, $align){
+    display: $flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

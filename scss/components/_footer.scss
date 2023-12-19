@@ -1,18 +1,14 @@
 footer {
     background-color: #07071c;
     padding: 10px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (flex, wrap, row, space-between, center);
     i {
         color: #0077b5
     }
     p {
     text-decoration: none;
     font-size: 12px;
-    color: white;
+    color: $color-terciario;
     padding-right: 5px;
     text-align: right;
     margin: 0;
