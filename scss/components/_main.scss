@@ -454,11 +454,11 @@ main {
                 max-width: 95%;
                 border: 1px $color-terciario solid;
                 padding: 15px;
-                @include flex (flex, wrap, column, center, center);
+                @include flex (flex, wrap, column, space-evenly, center);
                 fieldset {
                     div.name {
-                        @include flex (flex, wrap, row, center, flex-start);
-                        padding: 10px;
+                        padding: 10px 70px 10px 10px;
+                        margin-left: 0px;
                         input.name {
                             min-width: 95%;
                         }
@@ -466,7 +466,6 @@ main {
                 }
                 fieldset {
                     div.email {
-                        @include flex (flex, wrap, column, center, flex-start);
                         padding: 10px;
                         input.email {
                             min-width: 95%;
@@ -474,12 +473,10 @@ main {
                     }
                 }
                 fieldset.msj {
-                    @include flex (flex, wrap, column, center, flex-start);
                     padding: 10px;
                     font-size: 16px;
                 }
                 fieldset.btn-contacto {
-                    @include flex (flex, wrap, column, center, center);
                     .btn-enviar{
                         max-width: 200px;
                         font-size: 18px;
