@@ -1,0 +1,51 @@
+/*!------HEADER------*/
+header { 
+    padding: 15px 25px;
+    position: sticky;
+    top: 0px;
+    background-color: $color-principal;
+    z-index: 999;
+    .flex-container-navbar {
+        @include flex (flex, wrap, row, space-between, center);
+        a {
+            img {
+                max-width: 189px;
+            }
+        }
+        .bg-light {
+            background-color: $color-principal !important;
+            .navbar-toggler {
+                color: $color-secundario;
+                line-height: 1;
+                font-size: 1rem;
+                background-color: $color-principal;
+                border: var(--bs-border-width) solid $color-secundario;
+                .navbar-toggler-icon {
+                    filter: invert(79%) sepia(52%) saturate(200%) hue-rotate(113deg) brightness(91%) contrast(98%);
+                }
+            }
+            div {
+                .navbar-nav .nav-link.active,
+                .navbar-nav .show>.nav-link {
+                    color: $color-terciario;
+                    font-size: 18px;
+                    &:hover {
+                        color: $color-secundario;
+                    }
+                }
+            }
+        };
+    }
+    div {
+        a {
+            i {
+                color: #25d366;
+                background: $color-principal;
+                top: 54%;
+                right: 15px;
+                position: fixed;
+                border-radius: 5%;
+            }
+        }
+    }
+}
