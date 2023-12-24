@@ -7,7 +7,7 @@ footer {
     }
     p {
     text-decoration: none;
-    font-size: 12px;
+    font-size: nth($font-size, 1);
     color: $color-terciario;
     padding-right: 5px;
     text-align: right;
