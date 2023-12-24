@@ -26,7 +26,7 @@ main {
                 padding-left: 20px;
                 @include flex (flex, wrap, column, flex-start, flex-start);
                 h1 {
-                    font-size: 67px;
+                    font-size: nth($font-size, 19);
                     font-weight: 600;
                     line-height: 1em;
                     letter-spacing: -2px;
@@ -34,14 +34,14 @@ main {
                 }
                 span {
                     p {
-                            font-size: 16px;
+                            font-size: nth($font-size, 4);
                             padding-right: 20px;
                             padding-top: 0px;
                             margin: 0;
                     }
                 }
                 .btn-soluciones {
-                    font-size: 18px;
+                    font-size: nth($font-size, 6);
                     padding: 15px 25px;
                     border-radius: 50px;
                     @extend %btn-general-format;
@@ -67,10 +67,10 @@ main {
             padding-top: 25px;
             margin: 0;
             h2 {
-                font-size: 51px;
+                font-size: nth($font-size, 16);
             }
             p {
-                font-size: 16px;
+                font-size: nth($font-size, 4);
             }
         }
         div.flex-container-tarjetas {
@@ -89,7 +89,7 @@ main {
                     height: 40px;
                     margin-top: 8px;
                     a.btn-tarjetas {
-                        font-size: 14px;
+                        font-size: nth($font-size, 2);
                         padding: 8px;
                         border-radius: 25px;
                         @extend %btn-general-format;
@@ -128,7 +128,7 @@ main {
         .preguntas {
             min-width: 325px;
             margin: 10px;
-            font-size: 29px;
+            font-size: nth($font-size, 12);
             max-width: 40%;
             text-align: center;
             p {
@@ -143,12 +143,12 @@ main {
             padding-bottom: 20px;
             text-align: center;
             p {
-                font-size: 20px;
+                font-size: nth($font-size, 7);
                 text-align: center;
                 margin: 0;
             }
             .btn-respuestas {
-                font-size: 18px;
+                font-size: nth($font-size, 6);
                 padding: 12px 25px;
                 border-radius: 50px;
                 @extend %btn-general-format;
@@ -244,14 +244,14 @@ main {
                     h3 {
                         @extend %h3-inversiones;
                         &::first-letter {
-                            font-size: 80px;
+                            font-size: nth($font-size, 21);
                             color: $color-secundario;
                             float: left;
                             margin-right: 20px;
                             margin-top: -10px;
                         }
                         p {
-                            font-size: 15px;
+                            font-size: nth($font-size, 3);
                             inline-size: 370px;
                             text-shadow: black 1px 1px 3px;
                             text-align:inherit;
@@ -265,7 +265,7 @@ main {
                     h3 {
                         @extend %h3-inversiones;
                         &::first-letter {
-                            font-size: 80px;
+                            font-size: nth($font-size, 21);
                             color: $color-secundario;
                             float: right;
                             margin-left: 20px;
@@ -280,14 +280,14 @@ main {
                     h3 {
                         @extend %h3-inversiones;
                         &::first-letter {
-                            font-size: 80px;
+                            font-size: nth($font-size, 21);
                             color: $color-secundario;
                             float: left;
                             margin-right: 20px;
                             margin-top: -10px;
                         }
                         p {
-                            font-size: 15px;
+                            font-size: nth($font-size, 3);
                             inline-size: 370px;
                             text-shadow: black 1px 1px 3px;
                             text-align:inherit;
@@ -301,7 +301,7 @@ main {
                     h3 {
                         @extend %h3-inversiones;
                         &::first-letter {
-                            font-size: 80px;
+                            font-size: nth($font-size, 21);
                             color: $color-secundario;
                             float: right;
                             margin-left: 20px;
@@ -314,7 +314,7 @@ main {
                     grid-row: 3/4;
                     a {
                         max-width: 200px;
-                        font-size: 18px;
+                        font-size: nth($font-size, 6);
                         text-align: center;
                         padding: 10px 20px;
                         border-radius: 30px;
@@ -353,13 +353,13 @@ main {
                     max-height: 100%;
                 }
                 h3 {
-                    font-size: 24px;
+                    font-size: nth($font-size, 9);
                     text-align: center;
                     margin: 0;
                 }
                 p {
                     text-align: center;
-                    font-size: 16px;
+                    font-size: nth($font-size, 4);
                     margin: 0;
                     padding: 15px;
                 }
@@ -369,7 +369,7 @@ main {
             margin: 10px auto 0 auto;
             a {
                 max-width: 200px;
-                font-size: 18px;
+                font-size: nth($font-size, 6);
                 text-align: center;
                 padding: 10px 20px;
                 border-radius: 30px;
@@ -402,13 +402,13 @@ main {
                     max-height: 100%;
                 }
                 h3 {
-                    font-size: 24px;
+                    font-size: nth($font-size, 9);
                     text-align: center;
                     margin: 0;
                 }
                 p {
                     text-align: center;
-                    font-size: 16px;
+                    font-size: nth($font-size, 4);
                     margin: 0;
                     padding: 15px;
                 }
@@ -418,7 +418,7 @@ main {
             margin: 10px auto 0 auto;
             a {
                 max-width: 200px;
-                font-size: 18px;
+                font-size: nth($font-size, 6);
                 text-align: center;
                 padding: 10px 20px;
                 border-radius: 30px;
@@ -438,7 +438,7 @@ main {
             text-align: center;
         }
         h2.contacto {
-            font-size: 30px;
+            font-size: nth($font-size, 13);
             padding: 30px 0;
         }
         p.contacto {
@@ -474,12 +474,12 @@ main {
                 }
                 fieldset.msj {
                     padding: 10px;
-                    font-size: 16px;
+                    font-size: nth($font-size, 4);
                 }
                 fieldset.btn-contacto {
                     .btn-enviar{
                         max-width: 200px;
-                        font-size: 18px;
+                        font-size: nth($font-size, 6);
                         text-align: center;
                         padding: 10px 25px;
                         border-radius: 30px;
