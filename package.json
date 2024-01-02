@@ -3,23 +3,6 @@
   "version": "1.0.0",
   "description": "<h1 align=\"center\">Hi 👋, I'm Luciano Mogetta</h1>\r <h3 align=\"center\">I am a certified accountant and financial advisor who is entering the world of web development and programming.</h3>",
   "main": "index.js",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 879465680c60e49eb416df526cdeb33aa012eaf6
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^9.0.0",
-    "nodemon": "^3.0.2"
-  }
-<<<<<<< HEAD
-=======
   "dependencies": {
     "abbrev": "^1.1.1",
     "agent-base": "^6.0.2",
@@ -207,14 +190,11 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
 "watch-css": "nodemon -e scss -x \"npm run build-css\""
 
   },
   "author": "",
   "license": "ISC"
->>>>>>> release/v0.1
-=======
->>>>>>> 879465680c60e49eb416df526cdeb33aa012eaf6
 }

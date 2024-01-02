@@ -456,6 +456,11 @@
             div.grid-container-inversiones {
                 grid-auto-rows: 260px;
                 grid-template-columns: 1fr;
+                div.grid-items {
+                    p {
+                        font-size: nth($font-size, 2);
+                    }
+                }
             }
         }
     }
