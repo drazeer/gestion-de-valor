@@ -209,7 +209,7 @@ footer {
     main section .video-wrapper-hero .flex-container-hero a.btn-soluciones {
       font-size: 17px;
       margin-top: 60px;
-      padding: 15px 25px;
+      padding: 12px 25px;
       border-radius: 30px; }
     main section div.flex-container-h2-p {
       text-align: center;
@@ -417,7 +417,7 @@ main {
         margin: 0; }
       main section .video-wrapper-hero .flex-container-hero .btn-soluciones {
         font-size: 18px;
-        padding: 15px 25px;
+        padding: 12px 25px;
         border-radius: 50px;
         display: flex;
         flex-wrap: wrap;
@@ -428,7 +428,7 @@ main {
         max-width: 150px;
         text-align: center; }
         main section .video-wrapper-hero .flex-container-hero .btn-soluciones:hover, main section .video-wrapper-hero .flex-container-hero .btn-soluciones:focus {
-          padding: 20px 27px; }
+          padding: 18px 27px; }
   main section div.flex-container-h2-p {
     text-align: center;
     padding: 15px 150px 30px 150px; }
@@ -1146,7 +1146,7 @@ footer {
     main section .video-wrapper-hero .flex-container-hero a.btn-soluciones {
       font-size: 17px;
       margin-top: 60px;
-      padding: 15px 25px;
+      padding: 12px 25px;
       border-radius: 30px; }
     main section div.flex-container-h2-p {
       text-align: center;
@@ -1443,7 +1443,7 @@ footer {
     main section .video-wrapper-hero .flex-container-hero a.btn-soluciones {
       font-size: 17px;
       margin-top: 60px;
-      padding: 15px 25px;
+      padding: 12px 25px;
       border-radius: 30px; }
     main section div.flex-container-h2-p {
       text-align: center;

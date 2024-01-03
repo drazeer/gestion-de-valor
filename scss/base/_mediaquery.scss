@@ -272,8 +272,13 @@
                         a.btn-soluciones {
                             font-size: nth($font-size, 5);
                             margin-top: 60px;
-                            padding: 15px 25px;
+                            padding: 12px 25px;
                             border-radius: 30px;
+                            &:hover,
+                            &:focus {
+                        @extend %btn-hover-focus;
+                        padding: 16px 27px;
+                    }
                         }
                     }
                 }

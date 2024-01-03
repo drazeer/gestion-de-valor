@@ -48,7 +48,7 @@ main {
 
                 .btn-soluciones {
                     font-size: nth($font-size, 6);
-                    padding: 15px 25px;
+                    padding: 12px 25px;
                     border-radius: 50px;
                     @extend %btn-general-format;
                     @include flex (flex, wrap, row, space-around, center);
@@ -59,7 +59,7 @@ main {
                     &:hover,
                     &:focus {
                         @extend %btn-hover-focus;
-                        padding: 20px 27px;
+                        padding: 18px 27px;
                     }
                 }
             }
