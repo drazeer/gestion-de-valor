@@ -407,27 +407,71 @@ main {
                 grid-row: 1/4;
                 @include flex (flex, wrap, row, center, center);
             }
-
-            div.grid-items {
-                border: 1px $color-terciario solid;
-                padding: 20px;
+            div.flip-card {
                 text-align: center;
+                background-color: $color-principal;
+                perspective: 1000px;
 
-                img {
-                    max-height: 100%;
-                }
-
-                h3 {
-                    font-size: nth($font-size, 9);
+                div.flip-card-inner {
+                    border: 1px $color-terciario solid;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
                     text-align: center;
-                    margin: 0;
-                }
+                    transition: transform 0.6s;
+                    transition-delay: 0.25s;
+                    transform-style: preserve-3d;
+                    &:hover {
+                        transform: rotateY(180deg);
+                    }
 
-                p {
-                    text-align: center;
-                    font-size: nth($font-size, 4);
-                    margin: 0;
-                    padding: 15px;
+                    div.flip-card-front {
+                        padding: 20px;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        -webkit-backface-visibility: hidden;
+                        
+                        backface-visibility: hidden;
+                        
+
+                        img {
+                            min-height: 27%;
+                            max-width: 100%;
+                            margin-bottom: 15px;
+                        }
+
+                        h3 {
+                            font-size: nth($font-size, 9);
+                            text-align: center;
+                            margin: 0;
+                        }
+
+                        p {
+                            text-align: center;
+                            font-size: nth($font-size, 4);
+                            margin: 0;
+                            padding: 15px ;
+                        }
+                    }
+
+                    div.flip-card-back {
+                        width: 100%;
+                        height: 100%;
+                        transform: rotateY(180deg);
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                        background: rgb(14, 172, 212);
+                        background: linear-gradient(218deg, rgba(14, 172, 212, 1) 0%, rgba(156, 49, 255, 1) 100%);
+
+                        p {
+                            text-align: center;
+                            font-size: nth($font-size, 4);
+                            margin: 0;
+                            padding: 15px 20px 30px 20px;
+                            text-shadow: black 0.5px 0.5px 0.5px;
+                        }
+                    }
                 }
             }
         }
@@ -557,57 +601,6 @@ main {
         }
 
     }
-
-    /*----INVERSIONES
-    section.inversiones {
-        padding: 0 10px 50px 10px;
-        @include flex (flex, wrap, column, center, center);
-        div.grid-container-inversiones{
-            max-width: 1375px;
-            margin: 5px auto 30px auto;
-            padding: 5px;
-            display: grid;
-            grid-auto-rows: 400px;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-            div.grid-items {
-                border: 1px $color-terciario solid;
-                padding: 20px;
-                text-align: center;
-                img {
-                    max-height: 100%;
-                }
-                h3 {
-                    font-size: nth($font-size, 9);
-                    text-align: center;
-                    margin: 0;
-                }
-                p {
-                    text-align: center;
-                    font-size: nth($font-size, 4);
-                    margin: 0;
-                    padding: 15px;
-                }
-            }
-        }
-        div.btn-normal {
-            margin: 10px auto 0 auto;
-            a {
-                max-width: 200px;
-                font-size: nth($font-size, 6);
-                text-align: center;
-                padding: 10px 20px;
-                border-radius: 30px;
-                @extend %btn-general-format;
-                @include flex (flex, wrap, row, space-around, center);
-                &:hover {
-                    @extend %btn-hover-focus;
-                    padding: 11px 21px;
-                }
-            }
-        }
-    }
-----*/
 
     /*----CONTACTO----*/
     section.contacto {
