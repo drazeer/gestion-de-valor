@@ -210,7 +210,7 @@ footer {
         margin: 70px 0 0 0; }
       main section div.soluciones p {
         font-size: 14px;
-        padding-top: 15px; }
+        padding: 15px 15px 0; }
     main section div.flex-container-tarjetas {
       padding-bottom: 30px; }
     main section.precontacto {
@@ -1027,7 +1027,7 @@ footer {
         margin: 70px 0 0 0; }
       main section div.soluciones p {
         font-size: 14px;
-        padding-top: 15px; }
+        padding: 15px 15px 0; }
     main section div.flex-container-tarjetas {
       padding-bottom: 30px; }
     main section.precontacto {
@@ -1310,7 +1310,7 @@ footer {
         margin: 70px 0 0 0; }
       main section div.soluciones p {
         font-size: 14px;
-        padding-top: 15px; }
+        padding: 15px 15px 0; }
     main section div.flex-container-tarjetas {
       padding-bottom: 30px; }
     main section.precontacto {
