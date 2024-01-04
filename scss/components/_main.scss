@@ -71,9 +71,11 @@ main {
         div.flex-container-h2-p {
             text-align: center;
             padding: 15px 150px 30px 150px;
+
             h2 {
                 font-size: nth($font-size, 16);
             }
+
             p {
                 font-size: nth($font-size, 3);
                 padding-top: 25px;
@@ -173,38 +175,38 @@ main {
 
                 &:nth-child(1) {
                     &:before {
-                        background: rgb(223,25,251);
-                        background: linear-gradient(341deg, rgba(223,25,251,1) 0%, rgba(53,140,223,1) 85%);
+                        background: rgb(223, 25, 251);
+                        background: linear-gradient(341deg, rgba(223, 25, 251, 1) 0%, rgba(53, 140, 223, 1) 85%);
                     }
 
-                    
+
                     &:after {
-                        background: rgb(223,25,251);
-                        background: linear-gradient(341deg, rgba(223,25,251,1) 0%, rgba(53,140,223,1) 85%);
+                        background: rgb(223, 25, 251);
+                        background: linear-gradient(341deg, rgba(223, 25, 251, 1) 0%, rgba(53, 140, 223, 1) 85%);
                     }
                 }
 
                 &:nth-child(2) {
                     &:before {
-                        background: rgb(223,25,251);
-                        background: linear-gradient(341deg, rgba(223,25,251,1) 0%, rgba(53,140,223,1) 85%);
+                        background: rgb(223, 25, 251);
+                        background: linear-gradient(341deg, rgba(223, 25, 251, 1) 0%, rgba(53, 140, 223, 1) 85%);
                     }
 
                     &:after {
-                        background: rgb(223,25,251);
-                        background: linear-gradient(341deg, rgba(223,25,251,1) 0%, rgba(53,140,223,1) 85%);
+                        background: rgb(223, 25, 251);
+                        background: linear-gradient(341deg, rgba(223, 25, 251, 1) 0%, rgba(53, 140, 223, 1) 85%);
                     }
                 }
 
                 &:nth-child(3) {
                     &:before {
-                        background: rgb(223,25,251);
-                        background: linear-gradient(341deg, rgba(223,25,251,1) 0%, rgba(53,140,223,1) 85%);
+                        background: rgb(223, 25, 251);
+                        background: linear-gradient(341deg, rgba(223, 25, 251, 1) 0%, rgba(53, 140, 223, 1) 85%);
                     }
 
                     &:after {
-                        background: rgb(223,25,251);
-                        background: linear-gradient(341deg, rgba(223,25,251,1) 0%, rgba(53,140,223,1) 85%);
+                        background: rgb(223, 25, 251);
+                        background: linear-gradient(341deg, rgba(223, 25, 251, 1) 0%, rgba(53, 140, 223, 1) 85%);
                     }
                 }
 
@@ -799,19 +801,29 @@ main {
             @include flex (flex, wrap, column, center, center);
 
             form {
-                min-width: 250px;
+                min-width: 600px;
                 max-width: 95%;
                 border: 1px $color-terciario solid;
                 padding: 15px;
-                @include flex (flex, wrap, column, space-evenly, center);
 
                 fieldset {
                     div.name {
-                        padding: 10px 70px 10px 10px;
+                        padding: 10px 10px 10px 10px;
                         margin-left: 0px;
 
-                        input.name {
-                            min-width: 95%;
+                        label {
+                            display: inline-block;
+                            width: 10%;
+                            margin-right: 10px;
+                            min-width: 55px;
+                            text-align: left;
+                        }
+
+                        input {
+                            display: inline-block;
+                            padding-left: 5px;
+                            width: 60%;
+                            text-align: left;
                         }
                     }
                 }
@@ -820,18 +832,48 @@ main {
                     div.email {
                         padding: 10px;
 
-                        input.email {
-                            min-width: 95%;
+                        label {
+                            display: inline-block;
+                            width: 21%;
+                            margin-right: 8px;
+                            min-width: 55px;
+                            text-align: left;
+                        }
+
+                        input {
+                            display: inline-block;
+                            padding-left: 5px;
+                            width: 60%;
+                            text-align: left;
                         }
                     }
                 }
 
                 fieldset.msj {
-                    padding: 10px;
                     font-size: nth($font-size, 4);
+                    padding: 10px;
+
+                    label {
+                        display: inline-block;
+                        padding: 5px 5px 5px 0;
+                    }
+
+
+                    div {
+                        textarea {
+                            display: inline-block;
+                            width: 100%;
+                            padding: 5px;
+                            min-width: 500px;
+                            min-height: 350px;
+                            max-width: 100%;
+                        }
+                    }
                 }
 
                 fieldset.btn-contacto {
+                    @include flex (flex, wrap, row, center, center);
+
                     .btn-enviar {
                         max-width: 200px;
                         font-size: nth($font-size, 6);

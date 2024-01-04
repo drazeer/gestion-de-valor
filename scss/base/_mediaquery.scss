@@ -164,6 +164,7 @@
                 div.imagen-financiamiento {
                     grid-row-start: 2;
                     grid-row-end: 4;
+
                     img {
                         max-width: 55%;
                     }
@@ -179,17 +180,17 @@
                                 max-width: 25%;
                                 margin-bottom: 15px;
                             }
-    
+
                             h2 {
                                 font-size: nth($font-size, 9);
                             }
-    
+
                             p {
 
-                                padding: 10px ;
+                                padding: 10px;
                             }
                         }
-    
+
                         div.flip-card-back {
                             p {
                                 font-size: nth($font-size, 4);
@@ -210,6 +211,7 @@
                     div.flip-card-inner {
                         div.flip-card-front {
                             padding: 15px;
+
                             img {
                                 max-height: 25%;
                                 min-height: 15%;
@@ -237,343 +239,453 @@
     }
 }
 
-    @media screen and (max-width: 766px) {
+@media screen and (max-width: 766px) {
 
-        /*!------766px HEADER------*/
-        header {
-            .flex-container-navbar {
-                .bg-light {
-                    div {
+    /*!------766px HEADER------*/
+    header {
+        .flex-container-navbar {
+            .bg-light {
+                div {
 
-                        .navbar-nav .nav-link.active,
-                        .navbar-nav .show>.nav-link {
-                            font-size: nth($font-size, 4);
-                        }
-                    }
-                }
-            }
-        }
-
-        /*!------766ox HERO------*/
-        main {
-            section {
-                .video-wrapper-hero {
-                    .flex-container-hero {
-                        h1 {
-                            font-size: nth($font-size, 14);
-                        }
-
-                        span {
-                            p {
-                                font-size: nth($font-size, 2);
-                            }
-                        }
-
-                        a.btn-soluciones {
-                            font-size: nth($font-size, 5);
-                            margin-top: 60px;
-                            padding: 12px 25px;
-                            border-radius: 30px;
-                            &:hover,
-                            &:focus {
-                        @extend %btn-hover-focus;
-                        padding: 16px 27px;
-                    }
-                        }
-                    }
-                }
-            }
-
-            /*----766px SOLUCIONES----*/
-            section {
-                div.flex-container-h2-p {
-                    text-align: center;
-                    padding: 5px;
-                }
-
-                div.soluciones {
-                    text-align: center;
-                    padding: 30px 10px 15px 10px;
-
-                    h2 {
-                        font-size: nth($font-size, 11);
-                        margin: 70px 0 0 0;
-                    }
-
-                    p {
-                        font-size: nth($font-size, 2);
-                        padding: 15px 15px 0;
-                    }
-                }
-
-                div.flex-container-tarjetas {
-                    padding-bottom: 30px;
-                }
-            }
-
-            /*----766px PRECONTACTO----*/
-            section.precontacto {
-                flex-direction: column;
-
-                .preguntas {
-                    font-size: nth($font-size, 7);
-                }
-
-                .respuestas {
-                    p {
+                    .navbar-nav .nav-link.active,
+                    .navbar-nav .show>.nav-link {
                         font-size: nth($font-size, 4);
-                    }
-
-                    a.btn-respuestas {
-                        font-size: nth($font-size, 6);
-                        padding: 10px 20px;
-                    }
-                }
-            }
-        }
-
-        /*!------766px FOOTER------*/
-        body {
-            footer {
-                padding: 10px 10px;
-            }
-        }
-
-        /*----766px ASESORAMIENTO----*/
-        main {
-            section.flex-asesoramiento {
-                div.video-wrapper-asesoramiento {
-                    border: 1px solid #000;
-                    height: 100%;
-
-                    video {
-                        transform: rotate(90deg);
-                        object-fit: none;
-                        left: -50%;
-                        width: 200%;
-                    }
-
-                    div.flex-container-asesoramiento-h2-p {
-                        padding: 25px;
-
-                        div {
-                            h1 {
-                                font-size: nth($font-size, 14);
-                                padding: 30px;
-                                text-shadow: black 1px 1px 2px;
-                            }
-                        }
-
-                        div.grid-container-asesoramiento {
-                            display: grid;
-                            padding: 5px 0 0 0;
-                            gap: 5px;
-                            grid-template-rows: 120px 120px 120px 120px 50px;
-                            grid-template-columns: 1fr;
-
-                            div.grid-items-contacto {
-                                grid-row: 1/2;
-                                grid-column: 1/2;
-
-                                h2 {
-                                    font-size: nth($font-size, 8);
-
-                                    &::first-letter {
-                                        font-size: nth($font-size, 17);
-                                        margin-right: 15px;
-                                        margin-top: 10px;
-                                        padding: 0 0 0 50px;
-                                    }
-                                }
-
-                                p {
-                                    font-size: nth($font-size, 3);
-                                    inline-size: 320px;
-                                }
-
-                            }
-
-                            div.grid-items-analisis {
-                                grid-row: 2/3;
-                                grid-column: 1/2;
-                                padding-right: 20px;
-
-                                h2 {
-                                    font-size: nth($font-size, 8);
-
-                                    &::first-letter {
-                                        font-size: nth($font-size, 17);
-                                        margin-left: 15px;
-                                        margin-top: 10px;
-                                        padding: 0 50px 0 0px;
-                                    }
-                                }
-
-                                p {
-                                    font-size: nth($font-size, 3);
-                                    inline-size: 320px;
-                                }
-                            }
-
-
-                            div.grid-items-ejecucion {
-                                grid-row: 3/4;
-                                grid-column: 1/2;
-
-                                h2 {
-                                    font-size: nth($font-size, 8);
-
-                                    &::first-letter {
-                                        font-size: nth($font-size, 17);
-                                        margin-right: 15px;
-                                        margin-top: 10px;
-                                        padding: 0 0 0 50px;
-                                    }
-                                }
-
-                                p {
-                                    font-size: nth($font-size, 3);
-                                    inline-size: 320px;
-                                }
-                            }
-
-                            div.grid-items-resultados {
-                                grid-row: 4/5;
-                                grid-column: 1/2;
-                                padding-right: 20px;
-
-                                h2 {
-                                    font-size: nth($font-size, 8);
-
-                                    &::first-letter {
-                                        font-size: nth($font-size, 17);
-                                        margin-left: 15px;
-                                        margin-top: 10px;
-                                        padding: 0 50px 0 0px;
-                                    }
-                                }
-
-                                p {
-                                    font-size: nth($font-size, 3);
-                                    inline-size: 320px;
-                                }
-                            }
-
-                            div.grid-items-hablemos {
-                                grid-row: 5/6;
-                                grid-column: 1/2;
-
-                                a.btn-normal {
-                                    margin-top: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        /*----766px FINANCIAMIENTO----*/
-        main {
-            section.financiamiento {
-                div.grid-container-financiamiento {
-                    grid-template-rows: repeat(8, 300px);
-                    grid-template-columns: 1fr;
-                    max-width: 350px;
-
-                    div.imagen-financiamiento {
-                        grid-row-start: 1;
-                        grid-row-end: 3;
-                    }
-                    div.flip-card {
-                        div.flip-card-inner {
-                            div.flip-card-front {
-                                padding: 5px;
-                                h2 {
-                                    font-size: nth($font-size, 8);
-                                }
-                            }
-        
-                            div.flip-card-back {
-                                p {
-                                    font-size: nth($font-size, 4);
-                                    padding: 5px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-
-        /*----766px INVERSIONES----*/
-        main {
-            section.inversiones {
-                div.grid-container-inversiones {
-                    grid-auto-rows: 260px;
-                    grid-template-columns: 1fr;
-                    div.flip-card {
-                        div.flip-card-inner {
-                            div.flip-card-front {
-                                padding: 10px;
-                                img {
-                                    max-height: 40%;
-                                    min-height: 15%;
-                                    margin-bottom: 5px;
-                                }
-                                h2 {
-                                    font-size: nth($font-size, 7);
-                                }
-                                p {
-                                    text-align: center;
-                                    font-size: nth($font-size, 2);
-                                    margin: 0;
-                                    padding: 10px;
-                                }
-                            }
-    
-                            div.flip-card-back {
-                                p {
-                                    font-size: nth($font-size, 2);
-                                    padding: 30px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-
-
-
-
-
-
-        /*----766px CONTACTO----*/
-        section.formulariocontacto {
-            padding: 0 0 40px 0;
-
-            form {
-                min-width: 100px;
-                max-width: 100%;
-                padding: 5px;
-
-                fieldset {
-                    div.name {
-                        padding: 5px;
-                    }
-
-                    div.email {
-                        padding: 5px;
-                    }
-
-                    div.msj {
-                        font-size: nth($font-size, 3);
-                        padding: 5px;
                     }
                 }
             }
         }
     }
+
+    /*!------766ox HERO------*/
+    main {
+        section {
+            .video-wrapper-hero {
+                .flex-container-hero {
+                    h1 {
+                        font-size: nth($font-size, 14);
+                    }
+
+                    span {
+                        p {
+                            font-size: nth($font-size, 2);
+                        }
+                    }
+
+                    a.btn-soluciones {
+                        font-size: nth($font-size, 5);
+                        margin-top: 60px;
+                        padding: 12px 25px;
+                        border-radius: 30px;
+
+                        &:hover,
+                        &:focus {
+                            color: $color-terciario;
+                            transform: translateY(-0px);
+                            padding: 16px 27px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*----766px SOLUCIONES----*/
+        section {
+            div.flex-container-h2-p {
+                text-align: center;
+                padding: 5px;
+            }
+
+            div.soluciones {
+                text-align: center;
+                padding: 30px 10px 15px 10px;
+
+                h2 {
+                    font-size: nth($font-size, 11);
+                    margin: 70px 0 0 0;
+                }
+
+                p {
+                    font-size: nth($font-size, 2);
+                    padding: 15px 15px 0;
+                }
+            }
+
+            div.flex-container-tarjetas {
+                padding-bottom: 30px;
+            }
+        }
+
+        /*----766px PRECONTACTO----*/
+        section.precontacto {
+            flex-direction: column;
+
+            .preguntas {
+                font-size: nth($font-size, 7);
+            }
+
+            .respuestas {
+                p {
+                    font-size: nth($font-size, 4);
+                }
+
+                a.btn-respuestas {
+                    font-size: nth($font-size, 6);
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+
+    /*!------766px FOOTER------*/
+    body {
+        footer {
+            padding: 10px 10px;
+        }
+    }
+
+    /*----766px ASESORAMIENTO----*/
+    main {
+        section.flex-asesoramiento {
+            div.video-wrapper-asesoramiento {
+                border: 1px solid #000;
+                height: 100%;
+
+                video {
+                    transform: rotate(90deg);
+                    object-fit: none;
+                    left: -50%;
+                    width: 200%;
+                }
+
+                div.flex-container-asesoramiento-h2-p {
+                    padding: 25px;
+
+                    div {
+                        h1 {
+                            font-size: nth($font-size, 14);
+                            padding: 30px;
+                            text-shadow: black 1px 1px 2px;
+                        }
+                    }
+
+                    div.grid-container-asesoramiento {
+                        display: grid;
+                        padding: 5px 0 0 0;
+                        gap: 5px;
+                        grid-template-rows: 120px 120px 120px 120px 50px;
+                        grid-template-columns: 1fr;
+
+                        div.grid-items-contacto {
+                            grid-row: 1/2;
+                            grid-column: 1/2;
+
+                            h2 {
+                                font-size: nth($font-size, 8);
+
+                                &::first-letter {
+                                    font-size: nth($font-size, 17);
+                                    margin-right: 15px;
+                                    margin-top: 10px;
+                                    padding: 0 0 0 50px;
+                                }
+                            }
+
+                            p {
+                                font-size: nth($font-size, 3);
+                                inline-size: 320px;
+                            }
+
+                        }
+
+                        div.grid-items-analisis {
+                            grid-row: 2/3;
+                            grid-column: 1/2;
+                            padding-right: 20px;
+
+                            h2 {
+                                font-size: nth($font-size, 8);
+
+                                &::first-letter {
+                                    font-size: nth($font-size, 17);
+                                    margin-left: 15px;
+                                    margin-top: 10px;
+                                    padding: 0 50px 0 0px;
+                                }
+                            }
+
+                            p {
+                                font-size: nth($font-size, 3);
+                                inline-size: 320px;
+                            }
+                        }
+
+
+                        div.grid-items-ejecucion {
+                            grid-row: 3/4;
+                            grid-column: 1/2;
+
+                            h2 {
+                                font-size: nth($font-size, 8);
+
+                                &::first-letter {
+                                    font-size: nth($font-size, 17);
+                                    margin-right: 15px;
+                                    margin-top: 10px;
+                                    padding: 0 0 0 50px;
+                                }
+                            }
+
+                            p {
+                                font-size: nth($font-size, 3);
+                                inline-size: 320px;
+                            }
+                        }
+
+                        div.grid-items-resultados {
+                            grid-row: 4/5;
+                            grid-column: 1/2;
+                            padding-right: 20px;
+
+                            h2 {
+                                font-size: nth($font-size, 8);
+
+                                &::first-letter {
+                                    font-size: nth($font-size, 17);
+                                    margin-left: 15px;
+                                    margin-top: 10px;
+                                    padding: 0 50px 0 0px;
+                                }
+                            }
+
+                            p {
+                                font-size: nth($font-size, 3);
+                                inline-size: 320px;
+                            }
+                        }
+
+                        div.grid-items-hablemos {
+                            grid-row: 5/6;
+                            grid-column: 1/2;
+
+                            a.btn-normal {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*----766px FINANCIAMIENTO----*/
+    main {
+        section.financiamiento {
+            div.grid-container-financiamiento {
+                grid-template-rows: repeat(8, 300px);
+                grid-template-columns: 1fr;
+                max-width: 350px;
+
+                div.imagen-financiamiento {
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                }
+
+                div.flip-card {
+                    div.flip-card-inner {
+                        div.flip-card-front {
+                            padding: 5px;
+
+                            h2 {
+                                font-size: nth($font-size, 8);
+                            }
+                        }
+
+                        div.flip-card-back {
+                            p {
+                                font-size: nth($font-size, 4);
+                                padding: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*----766px INVERSIONES----*/
+    main {
+        section.inversiones {
+            div.grid-container-inversiones {
+                grid-auto-rows: 260px;
+                grid-template-columns: 1fr;
+
+                div.flip-card {
+                    div.flip-card-inner {
+                        div.flip-card-front {
+                            padding: 10px;
+
+                            img {
+                                max-height: 40%;
+                                min-height: 15%;
+                                margin-bottom: 5px;
+                            }
+
+                            h2 {
+                                font-size: nth($font-size, 7);
+                            }
+
+                            p {
+                                text-align: center;
+                                font-size: nth($font-size, 2);
+                                margin: 0;
+                                padding: 10px;
+                            }
+                        }
+
+                        div.flip-card-back {
+                            p {
+                                font-size: nth($font-size, 2);
+                                padding: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+    /*----CONTACTO----*/
+    main {
+    section.contacto {
+        .contacto {
+            margin: 0;
+            text-align: center;
+        }
+
+        h2.contacto {
+            font-size: nth($font-size, 13);
+            padding: 30px 0;
+        }
+
+        p.contacto {
+            padding: 0 15px 15px 15px;
+        }
+    }
+
+    section.formulariocontacto {
+        div.formulariocontacto {
+            padding-bottom: 40px;
+            @include flex (flex, wrap, column, center, center);
+
+            form {
+                min-width: 350px;
+                max-width: 95%;
+                border: 1px $color-terciario solid;
+                padding: 5px;
+
+                fieldset {
+                    div.name {
+                        padding: 5px;
+                        margin-left: 0px;
+                        
+                        label {
+                            display: inline-block;
+                            width: 10%;
+                            margin-right: 10px;
+                            min-width: 55px;
+                            text-align: left;
+                            font-size: nth($font-size, 2);
+                        }
+
+                        input {
+                            display: inline-block;
+                            padding-left: 5px;
+                            width: 70%;
+                            text-align: left;
+                            font-size: nth($font-size, 2);
+                        }
+                    }
+                }
+
+                fieldset {
+                    div.email {
+                        padding: 5px;
+                        
+                        label {
+                            display: inline-block;
+                            width: 31%;
+                            margin-right: 8px;
+                            min-width: 55px;
+                            text-align: left;
+                            font-size: nth($font-size, 2);
+                        }
+
+                        input {
+                            display: inline-block;
+                            padding-left: 5px;
+                            width: 65%;
+                            text-align: left;
+                            font-size: nth($font-size, 2);
+                        }
+                    }
+                }
+
+                fieldset.msj {
+                    font-size: nth($font-size, 2);
+                    padding: 5px;
+
+                    label {
+                        display: inline-block;
+                        padding: 5px 5px 5px 0;
+                    }
+
+
+                    div {
+                        textarea {
+                            display: inline-block;
+                            width: 100%;
+                            padding: 5px;
+                            min-width: 330px;
+                            min-height: 250px;
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+                fieldset.btn-contacto {
+                    @include flex (flex, wrap, row, center, center);
+
+                    .btn-enviar {
+                        max-width: 200px;
+                        font-size: nth($font-size, 6);
+                        text-align: center;
+                        padding: 10px 25px;
+                        border-radius: 30px;
+                        margin-top: 15px;
+                        text-decoration: none;
+                        color: $color-principal;
+                        background-color: $color-secundario;
+                        border: none;
+                        transition: 680ms;
+                        transform: translateY(0);
+                        @include flex (flex, wrap, row, center, center);
+
+                        &:hover {
+                            color: $color-terciario;
+                            transform: translateY(-0px);
+                            padding: 12px 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
