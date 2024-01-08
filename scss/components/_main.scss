@@ -780,13 +780,14 @@ main {
 
     /*----CONTACTO----*/
     section.contacto {
+        
         .contacto {
             margin: 0;
             text-align: center;
         }
 
         h2.contacto {
-            font-size: nth($font-size, 13);
+            font-size: nth($font-size, 15);
             padding: 30px 0;
         }
 
@@ -796,8 +797,16 @@ main {
     }
 
     section.formulariocontacto {
+        width: 100%;
+        min-height: 100px;
+        background-image: url("../img/backgroundcontacto3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        text-decoration: none;
         div.formulariocontacto {
-            padding-bottom: 40px;
+            padding-bottom: 127px;
             @include flex (flex, wrap, column, center, center);
 
             form {

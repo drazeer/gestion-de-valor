@@ -366,7 +366,7 @@ footer {
   main section.contacto p.contacto {
     padding: 0 15px 15px 15px; }
   main section.formulariocontacto div.formulariocontacto {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -1042,82 +1042,91 @@ main {
     margin: 0;
     text-align: center; }
   main section.contacto h2.contacto {
-    font-size: 30px;
+    font-size: 47px;
     padding: 30px 0; }
   main section.contacto p.contacto {
     padding: 0 15px 15px 15px; }
-  main section.formulariocontacto div.formulariocontacto {
-    padding-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    main section.formulariocontacto div.formulariocontacto form {
-      min-width: 600px;
-      max-width: 95%;
-      border: 1px white solid;
-      padding: 15px; }
-      main section.formulariocontacto div.formulariocontacto form fieldset div.name {
-        padding: 10px 10px 10px 10px;
-        margin-left: 0px; }
-        main section.formulariocontacto div.formulariocontacto form fieldset div.name label {
-          display: inline-block;
-          width: 10%;
-          margin-right: 10px;
-          min-width: 55px;
-          text-align: left; }
-        main section.formulariocontacto div.formulariocontacto form fieldset div.name input {
-          display: inline-block;
-          padding-left: 5px;
-          width: 60%;
-          text-align: left; }
-      main section.formulariocontacto div.formulariocontacto form fieldset div.email {
-        padding: 10px; }
-        main section.formulariocontacto div.formulariocontacto form fieldset div.email label {
-          display: inline-block;
-          width: 21%;
-          margin-right: 8px;
-          min-width: 55px;
-          text-align: left; }
-        main section.formulariocontacto div.formulariocontacto form fieldset div.email input {
-          display: inline-block;
-          padding-left: 5px;
-          width: 60%;
-          text-align: left; }
-      main section.formulariocontacto div.formulariocontacto form fieldset.msj {
-        font-size: 16px;
-        padding: 10px; }
-        main section.formulariocontacto div.formulariocontacto form fieldset.msj label {
-          display: inline-block;
-          padding: 5px 5px 5px 0; }
-        main section.formulariocontacto div.formulariocontacto form fieldset.msj div textarea {
-          display: inline-block;
-          width: 100%;
-          padding: 5px;
-          min-width: 500px;
-          min-height: 350px;
-          max-width: 100%; }
-      main section.formulariocontacto div.formulariocontacto form fieldset.btn-contacto {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; }
-        main section.formulariocontacto div.formulariocontacto form fieldset.btn-contacto .btn-enviar {
-          max-width: 200px;
-          font-size: 18px;
-          text-align: center;
-          padding: 10px 25px;
-          border-radius: 30px;
-          margin-top: 15px;
+  main section.formulariocontacto {
+    width: 100%;
+    min-height: 100px;
+    background-image: url("../img/backgroundcontacto3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-decoration: none; }
+    main section.formulariocontacto div.formulariocontacto {
+      padding-bottom: 127px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main section.formulariocontacto div.formulariocontacto form {
+        min-width: 600px;
+        max-width: 95%;
+        border: 1px white solid;
+        padding: 15px; }
+        main section.formulariocontacto div.formulariocontacto form fieldset div.name {
+          padding: 10px 10px 10px 10px;
+          margin-left: 0px; }
+          main section.formulariocontacto div.formulariocontacto form fieldset div.name label {
+            display: inline-block;
+            width: 10%;
+            margin-right: 10px;
+            min-width: 55px;
+            text-align: left; }
+          main section.formulariocontacto div.formulariocontacto form fieldset div.name input {
+            display: inline-block;
+            padding-left: 5px;
+            width: 60%;
+            text-align: left; }
+        main section.formulariocontacto div.formulariocontacto form fieldset div.email {
+          padding: 10px; }
+          main section.formulariocontacto div.formulariocontacto form fieldset div.email label {
+            display: inline-block;
+            width: 21%;
+            margin-right: 8px;
+            min-width: 55px;
+            text-align: left; }
+          main section.formulariocontacto div.formulariocontacto form fieldset div.email input {
+            display: inline-block;
+            padding-left: 5px;
+            width: 60%;
+            text-align: left; }
+        main section.formulariocontacto div.formulariocontacto form fieldset.msj {
+          font-size: 16px;
+          padding: 10px; }
+          main section.formulariocontacto div.formulariocontacto form fieldset.msj label {
+            display: inline-block;
+            padding: 5px 5px 5px 0; }
+          main section.formulariocontacto div.formulariocontacto form fieldset.msj div textarea {
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            min-width: 500px;
+            min-height: 350px;
+            max-width: 100%; }
+        main section.formulariocontacto div.formulariocontacto form fieldset.btn-contacto {
           display: flex;
           flex-wrap: wrap;
           flex-direction: row;
           justify-content: center;
           align-items: center; }
-          main section.formulariocontacto div.formulariocontacto form fieldset.btn-contacto .btn-enviar:hover {
-            padding: 12px 28px; }
+          main section.formulariocontacto div.formulariocontacto form fieldset.btn-contacto .btn-enviar {
+            max-width: 200px;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 25px;
+            border-radius: 30px;
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; }
+            main section.formulariocontacto div.formulariocontacto form fieldset.btn-contacto .btn-enviar:hover {
+              padding: 12px 28px; }
 
 footer {
   background-color: #07071c;
@@ -1415,7 +1424,7 @@ footer {
   main section.contacto p.contacto {
     padding: 0 15px 15px 15px; }
   main section.formulariocontacto div.formulariocontacto {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -1795,7 +1804,7 @@ footer {
   main section.contacto p.contacto {
     padding: 0 15px 15px 15px; }
   main section.formulariocontacto div.formulariocontacto {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
